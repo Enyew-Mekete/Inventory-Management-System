@@ -41,4 +41,4 @@ Deployment: Localhost / Flask server
 ---
 
 ## 👨‍💻 Author
-**Eny
+**Enyew M
