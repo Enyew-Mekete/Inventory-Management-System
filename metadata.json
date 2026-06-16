@@ -1,0 +1,6 @@
+{
+  "name": "Inventory Management System",
+  "description": "An online inventory management system with role based access control for managing products and warehouses",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

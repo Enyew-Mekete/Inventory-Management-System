@@ -1,0 +1,588 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Super Admin",
+      "email": "superadmin@admin.com",
+      "passwordHash": "superadmin",
+      "role": "superadmin",
+      "groupId": "g1",
+      "phone": "+1 (555) 019-2831",
+      "address": "100 Super HQ, Silicon Valley, CA",
+      "status": "active",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
+    },
+    {
+      "id": "u2",
+      "name": "Operations Admin",
+      "email": "admin@admin.com",
+      "passwordHash": "admin",
+      "role": "admin",
+      "groupId": "g2",
+      "phone": "+1 (555) 018-9900",
+      "address": "Warehouse B, Los Angeles, CA",
+      "status": "active",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
+    },
+    {
+      "id": "u3",
+      "name": "Stock Operator",
+      "email": "user@admin.com",
+      "passwordHash": "user",
+      "role": "user",
+      "groupId": "g3",
+      "phone": "+1 (555) 011-2244",
+      "address": "Storefront Alpha, Seattle, WA",
+      "status": "active",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80"
+    },
+    {
+      "name": "Test",
+      "email": "test@gmail.com",
+      "role": "superadmin",
+      "groupId": "g1",
+      "phone": "+25194330537",
+      "address": "Addis Ababa, ,Ethiopia",
+      "status": "active",
+      "id": "user_1781594300359",
+      "passwordHash": "Test@123"
+    }
+  ],
+  "groups": [
+    {
+      "id": "g1",
+      "name": "Super Administrator",
+      "description": "Full master administrative access with system override.",
+      "permissions": [
+        "manage_system_config",
+        "manage_users",
+        "manage_groups",
+        "manage_brands",
+        "manage_categories",
+        "manage_stores",
+        "manage_attributes",
+        "manage_products",
+        "manage_orders",
+        "view_reports",
+        "manage_company",
+        "view_profile"
+      ]
+    },
+    {
+      "id": "g2",
+      "name": "Store Manager (Admin)",
+      "description": "Administrative operational oversight over products and sales orders.",
+      "permissions": [
+        "manage_users",
+        "manage_groups",
+        "manage_brands",
+        "manage_categories",
+        "manage_stores",
+        "manage_attributes",
+        "manage_products",
+        "manage_orders",
+        "view_reports",
+        "view_profile"
+      ]
+    },
+    {
+      "id": "g3",
+      "name": "Staff Operator (User)",
+      "description": "Employee permissions for stock view and standard order placement.",
+      "permissions": [
+        "manage_products",
+        "manage_orders",
+        "view_reports",
+        "view_profile"
+      ]
+    }
+  ],
+  "brands": [
+    {
+      "id": "b1",
+      "name": "Nike",
+      "status": "active"
+    },
+    {
+      "id": "b2",
+      "name": "Apple",
+      "status": "active"
+    },
+    {
+      "id": "b3",
+      "name": "Samsung",
+      "status": "active"
+    },
+    {
+      "id": "b4",
+      "name": "IKEA",
+      "status": "active"
+    },
+    {
+      "id": "b5",
+      "name": "Adidas",
+      "status": "active"
+    },
+    {
+      "id": "b6",
+      "name": "Sony",
+      "status": "active"
+    },
+    {
+      "id": "b7",
+      "name": "Logitech",
+      "status": "active"
+    }
+  ],
+  "categories": [
+    {
+      "id": "c1",
+      "name": "Electronics",
+      "status": "active"
+    },
+    {
+      "id": "c2",
+      "name": "Apparel",
+      "status": "active"
+    },
+    {
+      "id": "c3",
+      "name": "Home Furniture",
+      "status": "active"
+    },
+    {
+      "id": "c4",
+      "name": "Kitchenware",
+      "status": "active"
+    }
+  ],
+  "stores": [
+    {
+      "id": "s1",
+      "name": "Main Warehouse (Chicago)",
+      "address": "400 Logistics Way, Chicago IL",
+      "status": "active"
+    },
+    {
+      "id": "s2",
+      "name": "Los Angeles Showroom",
+      "address": "102 Beverly Blvd, Los Angeles CA",
+      "status": "active"
+    },
+    {
+      "id": "s3",
+      "name": "London Retail Outlet",
+      "address": "15 Oxford St, London UK",
+      "status": "active"
+    }
+  ],
+  "attributes": [
+    {
+      "id": "a1",
+      "name": "Size",
+      "values": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "Free Size"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "a2",
+      "name": "Color",
+      "values": [
+        "Black",
+        "White",
+        "Navy",
+        "Silver",
+        "Red"
+      ],
+      "status": "active"
+    }
+  ],
+  "products": [
+    {
+      "id": "p1",
+      "name": "Nike Air Max Pro",
+      "sku": "NK-AM-PRO-01",
+      "barcode": "847291048291",
+      "description": "High performance sports sneakers with adaptive cushioning.",
+      "price": 150,
+      "buyingPrice": 85,
+      "qty": 65,
+      "brandId": "b1",
+      "categoryId": "c2",
+      "storeId": "s1",
+      "attributes": {
+        "Size": "M",
+        "Color": "Navy"
+      },
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80",
+      "status": "active"
+    },
+    {
+      "id": "p2",
+      "name": "iPhone 15 Pro Max 256GB",
+      "sku": "AP-IP15-PM",
+      "barcode": "194253811562",
+      "description": "Titanium casing flagship smartphone with state-of-the-art triple camera.",
+      "price": 1199,
+      "buyingPrice": 820,
+      "qty": 18,
+      "brandId": "b2",
+      "categoryId": "c1",
+      "storeId": "s1",
+      "attributes": {
+        "Color": "Silver"
+      },
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80",
+      "status": "active"
+    },
+    {
+      "id": "p3",
+      "name": "Samsung Galaxy S24 Ultra",
+      "sku": "SM-S24-ULTRA",
+      "barcode": "880609530491",
+      "description": "Premium Android smartphone with integrated S-Pen stylus and smart automation.",
+      "price": 1299,
+      "buyingPrice": 900,
+      "qty": 12,
+      "brandId": "b3",
+      "categoryId": "c1",
+      "storeId": "s2",
+      "attributes": {
+        "Color": "Black"
+      },
+      "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=500&q=80",
+      "status": "active"
+    },
+    {
+      "id": "p4",
+      "name": "IKEA Po\u00e4ng Chair",
+      "sku": "IK-POANG-W",
+      "barcode": "731894210492",
+      "description": "Classically designed, highly durable bentwood armchair with premium cover.",
+      "price": 110,
+      "buyingPrice": 60,
+      "qty": 4,
+      "brandId": "b4",
+      "categoryId": "c3",
+      "storeId": "s3",
+      "attributes": {
+        "Color": "White"
+      },
+      "image": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=500&q=80",
+      "status": "active"
+    },
+    {
+      "id": "p5",
+      "name": "Sony WH-1000XM5 ANC Headphones",
+      "sku": "SN-WH1000-XM5",
+      "barcode": "454873613255",
+      "description": "Industry leading active noise canceling wireless headphones with crystal audio.",
+      "price": 399,
+      "buyingPrice": 220,
+      "qty": 25,
+      "brandId": "b6",
+      "categoryId": "c1",
+      "storeId": "s1",
+      "attributes": {
+        "Color": "Black"
+      },
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80",
+      "status": "active"
+    },
+    {
+      "id": "p6",
+      "name": "Logitech MX Master 3S Mouse",
+      "sku": "LT-MXMAS-3S",
+      "barcode": "097855175519",
+      "description": "Ergonomic high precision master series office wireless scroll mouse.",
+      "price": 99,
+      "buyingPrice": 45,
+      "qty": 45,
+      "brandId": "b7",
+      "categoryId": "c1",
+      "storeId": "s1",
+      "attributes": {
+        "Color": "White"
+      },
+      "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=500&q=80",
+      "status": "active"
+    }
+  ],
+  "orders": [
+    {
+      "id": "o1",
+      "orderNo": "ORD-2026-0001",
+      "date": "2026-04-12T14:32:00.000Z",
+      "customerName": "Global Retailers Ltd",
+      "customerPhone": "+1 (555) 728-1920",
+      "customerAddress": "404 Commerce St, Boston MA",
+      "items": [
+        {
+          "id": "oi1",
+          "productId": "p1",
+          "name": "Nike Air Max Pro",
+          "sku": "NK-AM-PRO-01",
+          "qty": 15,
+          "rate": 150,
+          "amount": 2250
+        }
+      ],
+      "subtotal": 2250,
+      "vatPercent": 12,
+      "vatAmount": 270,
+      "serviceChargePercent": 5,
+      "serviceChargeAmount": 112.5,
+      "discount": 100,
+      "netAmount": 2532.5,
+      "status": "paid",
+      "orderType": "sales",
+      "userId": "u2",
+      "userName": "Operations Admin"
+    },
+    {
+      "id": "o2",
+      "orderNo": "ORD-2026-0002",
+      "date": "2026-05-18T10:15:00.000Z",
+      "customerName": "Super Distributing Corp",
+      "customerPhone": "+1 (555) 432-1090",
+      "customerAddress": "Warehouse 4, Detroit MI",
+      "items": [
+        {
+          "id": "oi2",
+          "productId": "p2",
+          "name": "iPhone 15 Pro Max 256GB",
+          "sku": "AP-IP15-PM",
+          "qty": 5,
+          "rate": 1199,
+          "amount": 5995
+        },
+        {
+          "id": "oi3",
+          "productId": "p3",
+          "name": "Samsung Galaxy S24 Ultra",
+          "sku": "SM-S24-ULTRA",
+          "qty": 2,
+          "rate": 1299,
+          "amount": 2598
+        }
+      ],
+      "subtotal": 8593,
+      "vatPercent": 12,
+      "vatAmount": 1031.16,
+      "serviceChargePercent": 5,
+      "serviceChargeAmount": 429.65,
+      "discount": 250,
+      "netAmount": 9803.81,
+      "status": "paid",
+      "orderType": "sales",
+      "userId": "u1",
+      "userName": "Super Admin"
+    },
+    {
+      "id": "o3",
+      "orderNo": "ORD-2026-06-03",
+      "date": "2026-06-12T09:00:00.000Z",
+      "customerName": "Apple Wholesale Inc",
+      "customerPhone": "+1-800-MY-APPLE",
+      "customerAddress": "One Infinite Loop, Cupertino",
+      "items": [
+        {
+          "id": "oi4",
+          "productId": "p2",
+          "name": "iPhone 15 Pro Max 256GB",
+          "sku": "AP-IP15-PM",
+          "qty": 10,
+          "rate": 820,
+          "amount": 8200
+        }
+      ],
+      "subtotal": 8200,
+      "vatPercent": 0,
+      "vatAmount": 0,
+      "serviceChargePercent": 0,
+      "serviceChargeAmount": 0,
+      "discount": 0,
+      "netAmount": 8200,
+      "status": "paid",
+      "orderType": "purchase",
+      "userId": "u2",
+      "userName": "Operations Admin"
+    }
+  ],
+  "company": {
+    "name": "Apex Logistics Corp",
+    "address": "220 Industrial Parkway, Chicago, IL 60601",
+    "phone": "+1 (312) 555-0150",
+    "vatPercent": 12,
+    "serviceChargePercent": 5,
+    "currency": "USD",
+    "footerText": "Thank you for partnering with Apex Logistics Corp."
+  },
+  "auditLogs": [
+    {
+      "userEmail": "superadmin@admin.com",
+      "userName": "Super Admin",
+      "userRole": "superadmin",
+      "action": "Logged In",
+      "module": "Authentication",
+      "details": "Successfully logged in to standard workspace.",
+      "id": "log_1781528772025_892",
+      "timestamp": "2026-06-15T13:06:12.025Z"
+    },
+    {
+      "id": "log1",
+      "userEmail": "superadmin@admin.com",
+      "userName": "Super Admin",
+      "userRole": "superadmin",
+      "action": "System Initialized",
+      "module": "Settings",
+      "timestamp": "2026-04-01T08:00:00.000Z",
+      "details": "Database pre-hydrated with initial corporate assets."
+    },
+    {
+      "id": "log_1781593144063_185",
+      "userEmail": "superadmin@admin.com",
+      "userName": "Super Admin",
+      "userRole": "superadmin",
+      "action": "Logged In",
+      "module": "Authentication",
+      "details": "Successfully logged in to standard workspace.",
+      "timestamp": "2026-06-16T06:59:04.000Z"
+    },
+    {
+      "id": "log_1781593258762_252",
+      "userEmail": "superadmin@admin.com",
+      "userName": "Super Admin",
+      "userRole": "superadmin",
+      "action": "Updated Company Settings",
+      "module": "Company Settings",
+      "details": "Company profile configs modified.",
+      "timestamp": "2026-06-16T07:00:58.000Z"
+    },
+    {
+      "id": "log_1781593366397_645",
+      "userEmail": "admin@admin.com",
+      "userName": "Operations Admin",
+      "userRole": "admin",
+      "action": "Logged In",
+      "module": "Authentication",
+      "details": "Successfully logged in to standard workspace.",
+      "timestamp": "2026-06-16T07:02:46.000Z"
+    },
+    {
+      "id": "log_1781593401013_511",
+      "userEmail": "user@admin.com",
+      "userName": "Stock Operator",
+      "userRole": "user",
+      "action": "Logged In",
+      "module": "Authentication",
+      "details": "Successfully logged in to standard workspace.",
+      "timestamp": "2026-06-16T07:03:21.000Z"
+    },
+    {
+      "id": "log_1781593798380_349",
+      "userEmail": "superadmin@admin.com",
+      "userName": "Super Admin",
+      "userRole": "superadmin",
+      "action": "Logged In",
+      "module": "Authentication",
+      "details": "Successfully logged in to standard workspace.",
+      "timestamp": "2026-06-16T07:09:58.000Z"
+    },
+    {
+      "id": "log_1781593832448_612",
+      "userEmail": "user@admin.com",
+      "userName": "Stock Operator",
+      "userRole": "user",
+      "action": "Logged In",
+      "module": "Authentication",
+      "details": "Successfully logged in to standard workspace.",
+      "timestamp": "2026-06-16T07:10:32.000Z"
+    },
+    {
+      "id": "log_1781594085020_891",
+      "userEmail": "admin@admin.com",
+      "userName": "Operations Admin",
+      "userRole": "admin",
+      "action": "Logged In",
+      "module": "Authentication",
+      "details": "Successfully logged in to standard workspace.",
+      "timestamp": "2026-06-16T07:14:45.000Z"
+    },
+    {
+      "id": "log_1781594144294_645",
+      "userEmail": "admin@admin.com",
+      "userName": "Operations Admin",
+      "userRole": "admin",
+      "action": "Updated Group",
+      "module": "Groups",
+      "details": "Group levels updated for 'Staff Operator (User)'.",
+      "timestamp": "2026-06-16T07:15:44.000Z"
+    },
+    {
+      "id": "log_1781594164015_773",
+      "userEmail": "user@admin.com",
+      "userName": "Stock Operator",
+      "userRole": "user",
+      "action": "Logged In",
+      "module": "Authentication",
+      "details": "Successfully logged in to standard workspace.",
+      "timestamp": "2026-06-16T07:16:04.000Z"
+    },
+    {
+      "id": "log_1781594184293_874",
+      "userEmail": "admin@admin.com",
+      "userName": "Operations Admin",
+      "userRole": "admin",
+      "action": "Logged In",
+      "module": "Authentication",
+      "details": "Successfully logged in to standard workspace.",
+      "timestamp": "2026-06-16T07:16:24.000Z"
+    },
+    {
+      "id": "log_1781594204086_980",
+      "userEmail": "admin@admin.com",
+      "userName": "Operations Admin",
+      "userRole": "admin",
+      "action": "Updated Group",
+      "module": "Groups",
+      "details": "Group levels updated for 'Staff Operator (User)'.",
+      "timestamp": "2026-06-16T07:16:44.000Z"
+    },
+    {
+      "id": "log_1781594300359_529",
+      "userEmail": "admin@admin.com",
+      "userName": "Operations Admin",
+      "userRole": "admin",
+      "action": "Created User",
+      "module": "Users",
+      "details": "New account created for 'Test' with role 'superadmin'.",
+      "timestamp": "2026-06-16T07:18:20.000Z"
+    },
+    {
+      "id": "log_1781594320831_824",
+      "userEmail": "test@gmail.com",
+      "userName": "Test",
+      "userRole": "superadmin",
+      "action": "Logged In",
+      "module": "Authentication",
+      "details": "Successfully logged in to standard workspace.",
+      "timestamp": "2026-06-16T07:18:40.000Z"
+    },
+    {
+      "id": "log_1781594366683_675",
+      "userEmail": "test@gmail.com",
+      "userName": "Test",
+      "userRole": "superadmin",
+      "action": "Logged In",
+      "module": "Authentication",
+      "details": "Successfully logged in to standard workspace.",
+      "timestamp": "2026-06-16T07:19:26.000Z"
+    }
+  ]
+}
